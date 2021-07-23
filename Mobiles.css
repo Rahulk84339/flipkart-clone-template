@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+}
+
+.logo {
+    display: inline-flex;
+}
+
+.logo img {
+    align-self: flex-start;
+    width: 9.5vw;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    background-color: green;
+    height: 10vh;
+    position: fixed;
+    z-index: 2;
+    top: 0%;
+}
+
+/* Navbar links */
+
+.navbar .nav-a {
+    text-align: center;
+    margin: 20px 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar links on mouse-over */
+
+.navbar .nav-a:hover {
+    transform: scale(1.09);
+    color: black;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Search bar on nav-bar */
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 10vw;
+    border-radius: 50px;
+    align-self: center;
+    position: relative;
+}
+
+.search input {
+    width: 30vw;
+    height: 4vh;
+    border-radius: 15px;
+    margin: 0 16px 0 56px;
+    padding: 0 1vw;
+    border: none;
+}
+
+.btn {
+    display: flex;
+    margin-right: 30px;
+    height: 4vh;
+    width: 3.5vw;
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    font-family: 'Crimson Text', serif;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+
+.bar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    top: 10vh;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bar a {
+    display: flex;
+    margin: 1vh 2.7vw;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.bar a:hover {
+    color: green;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 90px auto;
+    margin-top: 30px;
+}
+
+.heading {
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    margin: 90px auto;
+    margin-bottom: 20px;
+    margin-left: 45%;
+}
+
+.heading h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .card1 {
+    display: flex;
+    width: 90vw;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.container .card1 img {
+    margin: 0px 35px;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.container .card2 {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 10px auto;
+}
+
+.container .card2 img {
+    margin: 0px 35px;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.container .card3 {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 10px auto;
+}
+
+.container .card3 img {
+    margin: 0px 35px;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.container .card4 {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.container .card4 img {
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container img:hover {
+    transform: scale(1.1);
+}
+
+.line1 {
+    display: flex;
+    justify-content: center;
+    margin: 7px auto;
+    margin-bottom: 30px;
+}
+
+.line1 p {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 7px 170px;
+}
+
+.line2 {
+    display: flex;
+    justify-content: center;
+    margin: 7px auto;
+    margin-bottom: 30px;
+}
+
+.line2 p {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 7px 180px;
+}
+
+.line3 {
+    display: flex;
+    justify-content: center;
+    margin: 7px auto;
+    margin-bottom: 30px;
+}
+
+.line3 p {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 7px 180px;
+}
+
+.line4 {
+    display: flex;
+    margin: 7px auto;
+    justify-content: center;
+}
+
+.line4 p {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 7px 180px;
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%;
+    height: 40px;
+    width: 100%;
+    background-color: green;
+    color: white;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}

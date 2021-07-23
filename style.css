@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Mate+SC&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.maincontainer {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo a img {
+    left: 0;
+    width: 9.5vw;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+.navbar {
+    display: flex;
+    width: 100%;
+    background-color: #ff523b;
+    height: 80px;
+    position: fixed;
+    z-index: 2;
+    top: 0%;
+}
+
+/* Navbar links */
+
+.navbar .nav-a {
+    text-align: center;
+    margin: 20px 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar links on mouse-over */
+
+.navbar .nav-a:hover {
+    transform: scale(1.09);
+    color: black;
+}
+
+/* @media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+} */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Search bar on nav-bar */
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 10vw;
+    border-radius: 50px;
+    align-self: center;
+    position: relative;
+}
+
+.search input {
+    width: 30vw;
+    height: 30px;
+    border-radius: 15px;
+    margin: 0 16px 0 56px;
+    padding: 0 1vw;
+    border: none;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+.bar {
+    display: flex;
+    position: relative;
+    top: 80px;
+    height: 115px;
+    width: 100%;
+    box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.3);
+}
+
+.bar .bar1 {
+    margin: 10px 2.8vw;
+    cursor: pointer;
+}
+
+.bar .bar1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.bar .bar1 img {
+    width: 64px;
+    height: 64px;
+}
+
+.line {
+    display: flex;
+    font-size: smaller;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.bar .bar1:hover .line {
+    cursor: pointer;
+    color: #ff523b;
+    transform: scale(1.05);
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+#slider {
+    overflow: hidden;
+    height: 350px;
+    width: 95vw;
+    justify-items: center;
+    margin: 90px auto;
+    margin-bottom: 60px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: auto;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    float: left;
+    width: 20%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+.slider2 {
+    width: 100vw;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Join the cricket fun */
+
+.container .card {
+    width: 95vw;
+    margin: 30px auto;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Join the cricket fun */
+
+.card .card-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 25px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Join the cricket fun */
+
+.container .card .card-item {
+    position: relative;
+}
+
+.container .card .card-item img {
+    max-width: 100%;
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+
+.container .card .card-item:hover img {
+    transform: scale(1.1);
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Mobiles and Assessories */
+
+.container .card2 {
+    width: 95vw;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+    position: sticky;
+    box-sizing: border-box;
+}
+
+.container .card2 .card-item2 {
+    display: inline-flex;
+    justify-content: center;
+    margin: 30px 33px;
+    flex-direction: column;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.container .card2 .card-item2 {
+    position: relative;
+}
+
+.container .card2 .card-item2 img {
+    max-width: 100%;
+    transition: transform 0.5s;
+}
+
+.container .card2 .card-item2:hover img {
+    transform: scale(1.1);
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+.container .card3 {
+    width: 100vw;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 0px;
+    position: sticky;
+    box-sizing: border-box;
+}
+
+.container .card3 .card-item3 {
+    display: inline-flex;
+    justify-content: center;
+    margin: 10px 5px;
+    margin-top: 50px;
+    flex-direction: column;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.container .card3 .card-item3 img {
+    border-radius: 5px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+.container .card4 {
+    margin: 0px 5px;
+    margin-bottom: 30px;
+}
+
+.container .card4 img {
+    width: 97.8vw;
+    height: 30vh;
+    border-radius: 5px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Electronics */
+
+.container .card5 {
+    width: 95vw;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.container .card5 .card-item5 {
+    display: inline-flex;
+    justify-content: center;
+    margin: 30px 25px;
+    flex-direction: column;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.container .card5 .card-item5 {
+    position: relative;
+}
+
+.container .card5 .card-item5 img {
+    max-width: 100%;
+    transition: transform 0.5s;
+}
+
+.container .card5 .card-item5:hover img {
+    transform: scale(1.1);
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Home Top Deals */
+
+.container .card6 {
+    width: 95vw;
+    margin: 30px auto;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.card6 .card-item6 {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 20px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+.container .card6 .card-item6 {
+    position: relative;
+}
+
+.container .card6 .card-item6 img {
+    max-width: 100%;
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+
+.container .card6 .card-item6:hover img {
+    transform: scale(1.1);
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* Best selling furniture */
+
+.container .card7 {
+    width: 95vw;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.container .card7 .card-item7 {
+    display: inline-flex;
+    justify-content: center;
+    margin: 30px 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.container .card7 .card-item7 {
+    position: relative;
+}
+
+.container .card7 .card-item7 img {
+    max-width: 100%;
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+
+.container .card7 .card-item7:hover img {
+    transform: scale(1.1);
+}
+
+.my-3 {
+    width: 100vw;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+.lines {
+    text-align: center;
+}
+
+.container {
+    min-height: calc(100vh - 10vh - 10vh);
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%;
+    height: 40px;
+    width: 100%;
+    background-color: #ff523b;
+    color: white;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}
