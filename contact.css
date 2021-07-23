@@ -16,6 +16,7 @@
     height: 100%;
     cursor: pointer;
 }
+
 .navbar {
     display: flex;
     width: 100%;
@@ -77,6 +78,7 @@
 .search input:focus {
     outline: none;
 }
+
 .btn {
     display: flex;
     margin-right: 30px;
