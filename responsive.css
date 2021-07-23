@@ -31,8 +31,74 @@
         display: none;
     }
 }
+
 @media screen and (max-width: 700px) {
-    #slider figure img  {
+    #slider figure img {
         background-size: cover;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        width: 100%;
+        scroll-behavior: smooth;
+    }
+    .bar{
+        margin-top: 100px;
+    }
+    #slider {
+        margin: 5px auto;
+        margin-bottom: 60px;
+    }
+    .card-item3 img{
+        width: 380px;
+    }
+    .card4{
+        display: none;
+    }
+    .logo {
+        position: relative;
+        cursor: pointer;
+        margin-top: 0;
+        height: 80px;
+    }
+    .logo h2{
+        position: relative;
+        margin-top: 0;
+    }
+    .navbar nav a {
+        text-align: center;
+        margin: 20px 5px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        align-self: center;
+        line-height: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navbar nav i{
+        display: none;
+    }
+    .container .card7 .card-item7 {
+        margin: 30px 5px;
+    }
+    .card2{
+        text-align: center;
+    }
+    .container .card2 .card-item2 {
+        margin: 30px 30px;
+        text-align: center;
+    }
+    .container .card5 .card-item5 {
+        margin: 30px 10px;
+    }
+    .container .card6 .card-item6 {
+        margin: 30px 5px;
+    }
+    .container .card .card-item {
+        margin: 30px 20px;
+    }
+    #myBtn{
+        left: 90vw;
     }
 }
